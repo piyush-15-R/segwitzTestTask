@@ -2,12 +2,12 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   button: {
-    borderRadius: 1250,
-    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 10,
-    height: 30,
+    paddingVertical: 10,
+    backgroundColor: '#d6575c',
+    borderRadius: 10,
+    marginTop: 10,
   },
-  buttonText: {fontSize: 18, color: 'white'},
+  buttonText: {color: 'white', fontWeight: '500'},
 });
