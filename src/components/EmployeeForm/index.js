@@ -13,6 +13,7 @@ const EmployeeForm = ({onInputChange, data, onValidate}) => {
         style={styles.input}
         value={data.name}
         placeholder="Name"
+        placeholderTextColor={'#000000'}
         onChangeText={e => onInputChange('name', e)}
       />
       <Text
@@ -26,6 +27,7 @@ const EmployeeForm = ({onInputChange, data, onValidate}) => {
         style={styles.input}
         value={data.email}
         placeholder="Email"
+        placeholderTextColor={'#000000'}
         onChangeText={e => onInputChange('email', e)}
       />
       <Text
@@ -42,6 +44,7 @@ const EmployeeForm = ({onInputChange, data, onValidate}) => {
           value={data.password}
           secureTextEntry={!passwordVisible}
           placeholder="Password"
+          placeholderTextColor={'#000000'}
           onChangeText={e => onInputChange('password', e)}
         />
         <TouchableOpacity

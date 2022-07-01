@@ -3,8 +3,9 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   container: {margin: 10},
   divider: {borderColor: 'black', borderWidth: 1, marginBottom: 5},
-  heading: {fontSize: 18, fontWeight: '600', marginBottom: 5},
+  heading: {fontSize: 18, fontWeight: '600', marginBottom: 5, color: 'black'},
   input: {
+    color: 'black',
     borderWidth: 1,
     borderColor: 'grey',
     borderRadius: 5,
