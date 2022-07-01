@@ -4,21 +4,16 @@
 
 import React from 'react';
 import {TouchableOpacity, Text} from 'react-native';
+import {styles} from './styles';
 
-const RoundButton = ({onPress, title}) => {
+const RoundButton = ({onPress, title, disabled = false}) => {
   return (
     <TouchableOpacity
-      style={{
-        borderRadius: 1250,
-        backgroundColor: 'black',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingHorizontal: 10,
-        height: 30,
-      }}
+      disabled={disabled}
+      style={[styles.button, disabled ? {backgroundColor: 'grey'} : null]}
       onPress={onPress}
       title={title}>
-      <Text style={{fontSize: 18, color: 'white'}}>{title}</Text>
+      <Text style={styles.buttonText}>{title}</Text>
     </TouchableOpacity>
   );
 };

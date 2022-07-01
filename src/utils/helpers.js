@@ -2,6 +2,7 @@ export const validateInput = Obj => {
   if (Obj.name?.length > 5) {
     Obj.isNameValid = true;
   }
+  // eslint-disable-next-line no-useless-escape
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Obj.email)) {
     Obj.isEmailValid = true;
   }
